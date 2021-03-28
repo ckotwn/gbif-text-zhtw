@@ -1,3 +1,11 @@
+#### Document Control
+| Date | Description | Author(s) |
+| ---- | ----------- | --------- |
+|      | 初譯        | 何宣慶    |
+|  | 覆譯及審閱  | 柯智仁    |
+|  | 發布  |    |
+
+
 https://www.gbif.org/data-quality-requirements-checklists?fbclid=IwAR11wSu0wOWaRzi-DGQZuJjocVB2uEFg8auVdaCN-rTSgDpdRP3gzesdrr4
 資料品質需求:名錄資料集
 Data quality requirements: Checklist datasets

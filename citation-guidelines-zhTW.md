@@ -1,3 +1,11 @@
+#### Document Control
+| Date | Description | Author(s) |
+| ---- | ----------- | --------- |
+|      | 初譯        | 曾柏諺    |
+|      | 覆譯及審閱  | 柯智仁    |
+
+
+
 Citation guidelines
 引註指南
 These guidelines provide the most common examples of citation by GBIF users.

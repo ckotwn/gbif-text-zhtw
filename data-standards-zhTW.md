@@ -1,3 +1,10 @@
+#### Document Control
+| Date | Description | Author(s) |
+| ---- | ----------- | --------- |
+|      | 初譯        | 方品仁    |
+| | 覆譯及審閱  | 柯智仁    |
+| | 發布  |     |
+
 Data standards 資料規範
 Shared data standards are the main enabler for bringing together the hundreds of millions of primary biodiversity records in the GBIF index.
 共享資料的規範，是GBIF指標裡數以萬計的基礎生物多樣性資料彙整的主要推動因素

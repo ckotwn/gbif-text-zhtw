@@ -1,4 +1,10 @@
-Status: Published on 2021-03-26.
+#### Document Control
+| Date | Description | Author(s) |
+| ---- | ----------- | --------- |
+|      | 初譯        | 曾柏諺    |
+| 2021-03-26 | 覆譯及審閱  | 柯智仁    |
+| 2021-03-26 | 發布  | 柯智仁    |
+
 
 # 關於 GBIF 的物種數目
 

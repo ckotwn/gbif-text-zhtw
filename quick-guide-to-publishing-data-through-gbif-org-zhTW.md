@@ -1,4 +1,9 @@
-Status: Published.
+#### Document Control
+| Date | Description | Author(s) |
+| ---- | ----------- | --------- |
+|      | 初譯        | 方品仁    |
+| | 覆譯及審閱  | 柯智仁    |
+| | 發布  |     |
 
 ## 發布資料到 GBIF.org 的簡易指南
 

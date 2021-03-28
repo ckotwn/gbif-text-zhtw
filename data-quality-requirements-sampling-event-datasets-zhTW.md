@@ -1,3 +1,10 @@
+#### Document Control
+| Date | Description | Author(s) |
+| ---- | ----------- | --------- |
+|  | 翻譯  | 柯智仁    |
+|  | 發布  |    |
+
+
 # Data quality requirements: Sampling-event datasets
 
 By following these data quality requirements and  recommendations, data publishers can improve the quality, completeness  and value of their sampling-event datasets.

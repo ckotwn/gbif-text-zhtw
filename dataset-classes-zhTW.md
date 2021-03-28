@@ -1,3 +1,11 @@
+#### Document Control
+| Date | Description | Author(s) |
+| ---- | ----------- | --------- |
+|      | 初譯        | 方品仁    |
+| | 覆譯及審閱  | 柯智仁    |
+| | 發布  |     |
+
+
 # Dataset classes
 資料集類別
 
