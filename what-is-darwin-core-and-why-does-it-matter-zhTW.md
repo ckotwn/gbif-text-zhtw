@@ -3,7 +3,7 @@
 | ---------- | ----------- | --------- |
 |            | 初譯        | 方品仁    |
 | 2021-04-15 | 覆譯及審閱  | 柯智仁    |
-|            | 發布        |           |
+| 2021-04-16 | 修訂及發布  | 柯智仁    |
 
 
 
@@ -19,15 +19,15 @@ The Darwin Core Standard (DwC) offers a stable, straightforward and flexible fra
 
 Natural history collections, environmental monitoring programmes, recording societies, citizen scientist projects and others all hold valuable data on the world’s biodiversity. They collect and manage their information in many different systems and environments, and vary widely, depending on what kind of details are captured and stored for any individual record.
 
-自然史博物館典藏、環境監測計畫、紀錄社團、公民科學家專案…等等都保有世界上生物多樣性的珍貴資料，它們從許多不同的系統及環境收集、管理資料，其中記錄及保存下來、個別紀錄的細節變化很大。
+自然史博物館典藏、環境監測計畫、紀錄社團、公民科學家專案…等等都保有世界上生物多樣性的珍貴資料，它們從許多不同的系統及環境收集並管理資訊，且取決於記錄及保存下來的個別紀錄細節，內容變化很大。
 
 So how can we integrate these diverse datasets most simply and efficiently so scientists, analysts and policymakers can use them in research and policy?
 
-我們能如何簡易、有效率地整合這些多元的資料集，讓科學家、分析人員及決策者可以運用在研究及政策上呢?
+這樣的話，我們如何能簡易、有效率地整合這些多元的資料集，讓科學家、分析人員及決策者可以運用在研究及政策上呢?
 
 The [Darwin Core Standard (DwC)](http://rs.tdwg.org/dwc) offers a stable, straightforward and flexible framework for compiling biodiversity data from varied and variable sources. Originally developed by the [Biodiversity Information Standards (TDWG) community](http://www.tdwg.org/), Darwin Core is '[an evolving community-developed biodiversity data standard](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029715). It plays fundamental role in the sharing, use and reuse of open-access biodiversity data and today accounts for vast majority of the hundreds of millions of species occurrence records available through GBIF.org.
 
-達爾文核心集標準（Darwin Core Standard, DwC）提供一個穩定、直觀且有彈性的框架，用來編譯來源眾多、內容豐富的生物多樣性資料。最初由[生物多樣性資訊標準（Biodiversity Information Standard, TDWG）](https://www.tdwg.org)社群發展而來，達爾文核心集是一個「[演化中的、社群開發的生物多樣性資料標準](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029715)」，在分享、使用、再利用開放存取生物多樣性資料扮演十分重要的根本角色，也占了今天 GBIF.org 十數億筆的物種出現紀錄資料中的絕大部分。
+[達爾文核心集標準（Darwin Core Standard, DwC）](http://rs.tdwg.org/dwc)提供一個穩定、直觀且有彈性的框架，用來編譯來源眾多、內容豐富的生物多樣性資料。最初由[生物多樣性資訊標準（Biodiversity Information Standard, TDWG）](https://www.tdwg.org)社群發展而來，達爾文核心集是一個「[演化中的、社群開發的生物多樣性資料標準](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029715)」，在分享、使用、再利用開放存取生物多樣性資料上扮演十分重要的根本角色，也占了今天 GBIF.org 十數億筆的物種出現紀錄資料中的絕大部分。
 
 In practice, using Darwin Core revolves around a standard file format, the Darwin Core Archive (DwC-A). This compact package (a ZIP file) contains interconnected text files and enables data publishers to share their data using a common terminology. This standardization not only simplifies the process of publishing biodiversity datasets, it also makes it easy for users to discover, search, evaluate and compare datasets as they seek answers to today’s data-intensive research and policy questions.
 
@@ -38,7 +38,7 @@ Additional resources
 相關資源
 
 - Wieczorek J, Bloom D, Guralnick R, Blum S, Döring M, Giovanni R, et al. (2012) Darwin Core: An Evolving     Community-Developed Biodiversity Data Standard. PLoS ONE 7(1): e29715. [doi:10.1371/journal.pone.0029715](https://doi.org/10.1371/journal.pone.0029715).
-- [iOBIS Darwin Core manual](http://www.iobis.org/manual/darwincore/) iOBIS 達爾文核心集手冊
+- [OBIS Darwin Core manual](http://www.iobis.org/manual/darwincore/) OBIS 達爾文核心集手冊
 - [Darwin Core terms](https://gcube.wiki.gcube-system.org/gcube/Darwin_Core_Terms) 達爾文核心集辭彙（連結至 Gcube 維基）
 
 What’s in an archive?
@@ -54,9 +54,9 @@ Depending on how much information the source data contains—and how much they w
 發布者可以依照來源資料的資訊量及願意分享的內容，以下列三種核心集擇一創建達爾文核心集檔案：
 
 - a Taxon core, which lists a set of species, typically coming from the same region or sharing common     characteristics
-- 分類群核心集，一般為同一個區域或者有相同特性的一組物種清單。
+- 分類群核心集，一般為同一個區域或者有相同特性的一組物種清單；
 - an Occurrence core, which lists a set of times and locations at which particular species have been recorded.
-- 出現紀錄核心集，列出一組特定物種出現時間及地點的紀錄。
+- 出現紀錄核心集，列出一組特定物種出現時間及地點的紀錄；
 - an Event core, which lists field studies (including the protocols used, the sample size, and the location for each).
 - 調查活動核心集，紀錄田野研究資訊（包含個別的取樣協定、取樣規模，採集地點等）。
 
@@ -117,36 +117,36 @@ The addition of the ‘event core’ to the Darwin Core Standard includes severa
 達爾文核心集標準中新增的「調查活動核心集」包含一些高度適用於基於取樣和監測資料的新辭彙：
 
 - **eventID**: an identifier specific for the event in a dataset
-- **事件識別碼**：資料集中每次採樣調查活動（事件）的識別碼
+- **eventID**（**事件識別碼**）：資料集中每次採樣調查活動（事件）的識別碼；
 
 
 
 - **parentEventID**: an identifier that groups events
-- **母事件識別碼**：數個採樣調查活動（事件）的群組識別碼。
+- **parentEventID**（**母事件識別碼**）：數個採樣調查活動（事件）的群組識別碼；
 
 
 
 - **samplingProtocol**: name, reference, description of method or protocol used during sampling event
-- **取樣協定**：採樣調查活動（事件）的採樣方法的名稱、引用出處及方法或協定的描述。
+- **samplingProtocol**（**取樣協定**）：採樣調查活動（事件）的採樣方法的名稱、引用出處及方法或協定的描述；
 
 
 
 - **sampleSizeValue**: numeric value for the size (duration, length, area or volume) of a sample in a sampling event. Must have a corresponding sampleSizeUnit
-- **取樣大小數值**：採樣調查活動（事件）中樣本的大小數值（持續時間、長度、面積或體積）。必須要有對應的取樣大小單位。
+- **sampleSizeValue**（**取樣大小數值**）：採樣調查活動（事件）中樣本的大小數值（持續時間、長度、面積或體積）。必須要有對應的取樣大小單位；
 
 
 
 - **sampleSizeUnit**: the unit of measure of the size (sampleSizeValue)
-- **取樣大小單位**：測量數量的單位（取樣大小數值）。
+- **sampleSizeUnit**（**取樣大小單位**）：測量數量的單位（取樣大小數值）；
 
 
 
 - **organismQuantity**: a number for the quantity of organisms. Must have a corresponding organismQuantityType
-- **個體數量**：個體數量的數值。必須有相對應的個體數量類型。
+- **organismQuantity**（**個體數量**）：個體數量的數值。必須有相對應的個體數量類型；
 
 
 
 - **organismQuantityType**: the type of quantification system used for the quantity of organisms
-- **個體數量類型**：表示個體數量所使用的量化系統。
+- **organismQuantityType**（**個體數量類型**）：表示個體數量所使用的量化系統。
 
  
