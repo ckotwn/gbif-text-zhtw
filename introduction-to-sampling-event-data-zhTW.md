@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/sampling-event-data
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/citation-guidelines
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

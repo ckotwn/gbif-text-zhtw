@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/the-gbif-network
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

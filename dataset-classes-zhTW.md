@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/dataset-classes
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

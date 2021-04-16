@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/data-quality-requirements-sampling-events
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

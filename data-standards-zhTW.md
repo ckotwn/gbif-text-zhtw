@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/standards
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

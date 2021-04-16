@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/about-species-counts
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

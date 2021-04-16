@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/become-a-publisher
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

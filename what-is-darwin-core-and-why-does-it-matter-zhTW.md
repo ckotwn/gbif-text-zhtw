@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/darwin-core
+
 #### Document Control
 | Date       | Description | Author(s) |
 | ---------- | ----------- | --------- |

@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/data-quality-requirements-checklists
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

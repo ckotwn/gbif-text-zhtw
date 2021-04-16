@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/publishing-data
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |

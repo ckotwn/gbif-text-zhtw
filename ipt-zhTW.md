@@ -1,3 +1,5 @@
+https://www.gbif.org/zh-tw/ipt
+
 #### Document Control
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |
