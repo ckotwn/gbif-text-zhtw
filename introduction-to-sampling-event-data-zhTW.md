@@ -4,7 +4,7 @@ https://www.gbif.org/zh-tw/sampling-event-data
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |
 | | 翻譯  | 柯智仁    |
-| | 發布  |     |
+| 2021-08-13 | 發布  | 柯智仁 |
 
 # 介紹：調查活動資料
 
