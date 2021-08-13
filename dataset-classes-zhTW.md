@@ -7,8 +7,12 @@ https://www.gbif.org/zh-tw/dataset-classes
 | | 覆譯及審閱  | 柯智仁    |
 | 2021-08-13 | 發布  | 柯智仁 |
 
+### Keywords
+
+資料集, 詮釋資料, 名錄, 物種出現紀錄, 取樣事件, 調查活動, 取樣, 缺如
 
 # Dataset classes
+
 資料集類別
 
 The four classes of datasets supported by GBIF start simply and become progressively richer, more structured and more complex
@@ -19,8 +23,12 @@ We encourage data holders to publish the richest data possible to ensure their u
 
 即使每個資料集涵蓋的資訊有不同的詳細程度，我們仍鼓勵資料的擁有者們儘可能地發布最詳細的資料，以確保這些資料可以廣泛地應用在各種研究方法及議題。經由 GBIF.org 發布任何已有的資料均有其價值，因為即便是片段的資訊也能回答一些重要問題。
 
+Below are descriptions of the four classes of datasets currently supported by GBIF.
+
+以下為 GBIF 現今支援之四種資料集的描述。
 
 ### Resources metadata
+
 資源的詮釋資料
 
 At its simplest level, GBIF.org allows institutions to create datasets describing undigitized resources like those in natural history and other collections. All three other dataset classes include this basic information, but this ‘metadata-only’ class offers researchers a valuable tool for discovering and learning about evidence not yet available online. They can also help assess the relative importance and value of undigitized collections and set priorities for future digitization. As with all datasets, GBIF ensures that each metadata dataset is associated with a unique Digital Object Identifier (DOI) to streamline data users’ citation of these resources.
@@ -40,9 +48,11 @@ Datasets can also provide a catalogue or list of named organisms, or taxa. While
 
 - [瀏覽名錄資料集](/dataset/search?type=CHECKLIST)
 - [物種名錄資料的達爾文核心集檔案範本](https://github.com/gbif/ipt/wiki/checklistData#templates)
-- [物種名錄資料的資料品質要求](https://www.gbif.org/zh-tw/data-quality-requirements-checklists)
+- [物種名錄資料的資料品質要求](/data-quality-requirements-checklists)
 
 ### Occurrence data
+
+物種出現紀錄資料
 
 Other datasets published through GBIF.org have sufficiently consistent detail to contribute information about the location of individual organisms in time and space—that is, they offer evidence of the occurrence of a species (or other taxon) at a particular place on a specified date. Occurrence datasets make up the core of data published through GBIF.org, and examples can range from specimens and fossils in natural history collections, observations by field researchers and citizen scientists, and data gathered from camera traps or remote-sensing satellites.
 
@@ -52,9 +62,9 @@ Occurrence records in these datasets sometimes provide only general locality inf
 
 物種出現紀錄資料有時只記錄籠統的地點資訊，或甚至只記載出現的國家。但多數情況下，正確的位置、地理座標資訊有助於細微尺度的研究分析和物種分布繪製。
 
-- [瀏覽物種出現紀錄資料集](https://www.gbif.org/zh-tw/dataset/search?type=OCCURRENCE)
+- [瀏覽物種出現紀錄資料集](/dataset/search?type=OCCURRENCE)
 - [物種出現紀錄資料集的達爾文核心集檔案範本](https://github.com/gbif/ipt/wiki/occurrenceData#templates)
-- [物種出現紀錄資料的資料品質要求](https://www.gbif.org/zh-tw/data-quality-requirements-occurrences)
+- [物種出現紀錄資料的資料品質要求](/data-quality-requirements-occurrences)
 
 註：自動相機指使用動作傳感器、紅外探測器或其他光束作為觸發機關的遙控相機。它常被用來拍攝攝影師不容易直接拍得的畫面，多運用在生態研究領域，例如監督狩獵、觀察野生動物、尋找稀有物種等。
 
@@ -70,7 +80,7 @@ By indicating the methods, events and relative abundance of species recorded in 
 
 藉由說明採集方法、調查活動過程與紀錄物種相對豐度，此類資料集改善了研究者使用一致的方法協定在不同地點、時間的對照—在某些案例中，甚至能導引研究者推斷在特定區域不再出現的物種。
 
-- [調查活動資料介紹](https://www.gbif.org/zh-tw/sampling-event-data)
-- [瀏覽調查活動資料集](https://www.gbif.org/zh-tw/dataset/search?type=SAMPLING_EVENT)
+- [調查活動資料介紹](/sampling-event-data)
+- [瀏覽調查活動資料集](/dataset/search?type=SAMPLING_EVENT)
 - [調查活動資料集的達爾文核心集範本](https://github.com/gbif/ipt/wiki/samplingEventData#templates)
-- [調查活動資料集的資料品質要求](https://www.gbif.org/zh-tw/data-quality-requirements-sampling-events)
+- [調查活動資料集的資料品質要求](/data-quality-requirements-sampling-events)
