@@ -4,7 +4,7 @@ https://www.gbif.org/zh-tw/become-a-publisher
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |
 | | 翻譯  | 柯智仁    |
-| | 發布  |     |
+| 2019-??-?? | 發布  | 柯智仁    |
 
 # 成為資料發布者
 
