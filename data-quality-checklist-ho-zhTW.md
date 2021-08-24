@@ -19,17 +19,17 @@ By following these data quality requirements and recommendations, data publisher
 Checklist datasets provide a catalogue, rapid summary or baseline inventory a set of named organisms, or taxa. While they may include additional details like local species names or specimen citations, checklists typically categorize information along taxonomic, geographic, and thematic lines, or some combination of the three.
 By following these data quality requirements and recommendations, data publishers can improve the quality, completeness and value of their checklist datasets.
 
-名錄資料集提供一組已鑑定生物或分類單元（註）的目錄、摘要或基線清單。名錄通常依照分類學、地理、主題（如瀕危等級）或此三者中的組合來進行資訊的分類，同時可能包含其他細節如當地物種普通名或標本佐證。依循這些資料品質的需求及建議，資料發布者可以改善他們名錄資料集的品質、完整性及價值。
+名錄資料集提供一組已鑑定生物或分類群（註）的目錄、摘要或基線清單。名錄通常依照分類學、地理、主題（如瀕危等級）或此三者中的組合來進行資訊的分類，同時可能包含其他細節如當地物種普通名或標本佐證。依循這些資料品質的需求及建議，資料發布者可以改善他們名錄資料集的品質、完整性及價值。
 
-註：分類單位；分類群（taxon，複數 taxa）為演化上親緣關係接近的同系群體，可以指涉種、亞種或者種以上位階。
+註：分類群（taxon，複數 taxa）為演化上親緣關係接近的同系群體，可以指涉種、亞種或者種以上位階。
 
 ## Darwin Core records 
 ## 達爾文核心集紀錄
 
 欄位名稱	填寫指示
-taxonID（分類單位識別碼） 必填
+taxonID（分類群識別碼） 必填
 scientificName（學名） 必填
-taxonRank（分類單位位階） 必填
+taxonRank（分類群位階） 必填
 kingdom（界）強烈建議填寫
 parentNameUsageID（母學名用法編號） 強烈建議填寫
 acceptedNameUsageID（接受學名用法編號） 強烈建議填寫
@@ -61,9 +61,6 @@ projectTitle (計畫名稱) 必填
 ### Required information
 ### 必填
 The items listed below constitute the minimum formal requirements for publishing [an occurrence dataset](https://github.com/gbif/portal-feedback/issues/3545). GBIF.org will not accept a dataset without these terms and will not index the records. While these items are mandatory for publishing the dataset at all, they are only the starting point. The usefulness of the published data will still be severely limited unless additional information is supplied.
-
-
-
 
 下方所列為正式發表名錄資料集必須之最少欄位項目。GBIF.org 不會接受缺少這些欄位元素的資料集，也不會索引其中的紀錄。雖然這些欄位是發布資料必備，但這僅只是開始而已。除非再提供更多額外欄位資料，僅滿足必填欄位的發布資料仍會有很多使用上的限制。
 
@@ -98,12 +95,12 @@ If additional data are available, consider sharing them in order to increase the
 ### 詞彙（欄位元素）
 
 taxonID
-物種識別碼 taxonID
+分類群識別碼 taxonID
 Darwin Core dataset element, REQUIRED for checklist datasets
 達爾文核心集資料元素，在名錄資料集為**必填**
 
 A unique identifier for the taxon, allowing the same taxon to be recognized across dataset versions as well as through data downloads and use (see Darwin Core Terms: A quick reference guide
-此欄位為一分類群獨一無二的識別碼，可讓同一個分類群在不同的資料集版本以及透過下載和使用的資料中辨認出來（參閱[達爾文核心集詞彙：快速參考指南](http://rs.tdwg.org/dwc/terms/taxonID)）。
+此欄位為一分類群獨一無二的識別碼，可讓同一個分類群在不同的資料集版本以及透過下載和使用的資料中辨認出來（參閱[達爾文核心集詞彙：快速參考指南](https://dwc.tdwg.org/list/#dwc_taxonID)）。
 
 Ideally, the taxonID is a persistent global unique identifier. As a minimum requirement, it has to be unique within the published dataset. It allows to recognize the same set of taxon information over time when the dataset indexing is refreshed; it links additional data like images or occurrence records; and it makes it possible to cite records e.g. in usage reports or in publications. This means that the taxonID needs to reliably stay with the taxon information at source, and to consistently refer to the same set of taxon information in published datasets and any underlying source data.
 理想上，物種識別碼為一個全球獨一無二的識別碼；最低的要求則是在發布的資料集本身其有唯一性。如此隨著修訂每次針對資料集製作索引時才可以追蹤所包含的分類群資訊；它可以連結其他額外的訊息，如影像及出現紀錄；並且使人可以引用紀錄，例如，資料使用報告或學術發表。這代表物種識別碼需要可靠地連結來源的分類群內容，並且總是在同一個發布的資料集及其來源資料中指向同一組分類群資訊。
@@ -116,7 +113,7 @@ Darwin Core dataset element, REQUIRED for checklist datasets
 
 The full scientific name, including authorship and year of the name where applicable. In the context of a checklist, the scientific name is the core data element of a taxon list or hierarchy that the dataset is set out to collate and publish (see Darwin Core Terms: A quick reference guide)
 
-此欄位為一完整的學名，包含其作者及發表年代。在名錄中，學名為準備整理及發表分類群列表或階層的核心資料元素（參閱[達爾文核心集詞彙：快速參考指南](http://rs.tdwg.org/dwc/terms/scientificName)）。
+此欄位為一完整的學名，包含其作者及發表年代。在名錄中，學名為準備整理及發表分類群列表或階層的核心資料元素（參閱[達爾文核心集詞彙：快速參考指南](https://dwc.tdwg.org/list/#dwc_scientificName)）。
 
 Depending on the purpose of the checklist, scientific names may be of any hierarchical level, though typically would be of species rank or below for, e.g., regional floristic or faunistic checklists, Red List collations, or thematic inventories like marine organisms or taxonomic revisions of species groups. If the checklist is intended to publish a hierarchy (tree-like structure), add separate entries for the relevant upper taxonomic ranks, e.g. kingdom, class and family, and link them into a hierarchical structure using the parentNameUsageID (see below) to support unambiguous interpretation of the checklist entries.
 
@@ -132,21 +129,21 @@ Darwin Core dataset element, REQUIRED for checklist datasets
 達爾文核心集資料元素，在名錄資料集為**必填**
 
 The taxonomic rank of the supplied scientific name (see Darwin Core Terms: A quick reference guide
-用以表示所提供學名的分類層級（參閱[達爾文核心集詞彙：快速參考指南](http://rs.tdwg.org/dwc/terms/taxonRank)）。
+用以表示所提供學名的分類層級（參閱[達爾文核心集詞彙：快速參考指南](https://dwc.tdwg.org/list/#dwc_taxonRank)）。
 
 The taxon rank supports the interpretation of the scientific name during indexing, and supports matching the checklist records to the core taxonomy, especially in the case of names at genus level or above (monomials). While the format of higher taxon names in some groups contains indicators of their rank, this is not consistent across or even within groups, and cannot be reliably used for interpretation. For placing names correctly, explicitly specifying the taxon rank, alongside information on the higher taxonomy, is an important criterion. For practical purposes, the ranks used have to be (major) Linnean ranks: kingdom, phylum, class, order, family, genus, species. Both Latin or English terms are accepted.
 
-分類階層在製作索引時用來解讀學名，以及核對核心分類學中的名錄紀錄，尤其是屬級或更高的層級的學名（單名）。雖然有些高階分類群的學名已經指出分類階層，但這在群體間甚至群體內部不一定一致，故無法（由索引程序）用來解讀。為使學名可以正確地歸位，在高階分類資訊中明確指出其分類階層實為必要。實務上，分類階層必須依循林奈系統的（主要）層級：kingdom（界）、phylum（門）、class（綱）、order目）、family（科）、genus（屬）、speciea（種）。此處使用拉丁文或英文的用法均可。
+分類階層在製作索引時用來解讀學名，以及核對核心分類學中的名錄紀錄，尤其是屬級或更高的層級的學名（單名）。雖然有些高階分類群的學名已經指出分類階層，但這在群體間甚至群體內部不一定一致，故無法（由索引程序）用來解讀。為使學名可以正確地歸位，在高階分類資訊中明確指出其分類階層實為必要。實務上，分類階層必須依循林奈系統的（主要）層級：kingdom（界）、phylum（門）、class（綱）、order（目）、family（科）、genus（屬）、speciea（種）。此處使用拉丁文或英文的用法均可。
 
 
 kingdom
 界（kingdom）
 Darwin Core dataset element, STRONGLY RECOMMENDED for checklist datasets
-達爾文資料集核心元素, 在名錄資料集為**強烈建議填寫**
+達爾文核心集資料元素，在名錄資料集為**強烈建議填寫**
 
 The full scientific name specifying the kingdom that the scientific name is classified under (see Darwin Core Terms: A quick reference guide and other higher taxonomy, if possible)
 
-完整的學名加上這個學名所屬的界級分類（參閱[達爾文核心集詞彙：快速參考指南](http://rs.tdwg.org/dwc/terms/kingdom)或者其他高階分類，若有的話）。
+完整的學名加上這個學名所屬的界級分類（參閱[達爾文核心集詞彙：快速參考指南](https://dwc.tdwg.org/list/#dwc_kingdom)或者其他高階分類，若有的話）。
 
 With scientific names, there are numerous cases where the matching of a given name against the core taxonomy is unsure or ambiguous. This is the case, for example, with homonyms (identical names exist for different organisms, usually across groups), newly described names that are not yet part of the existing taxonomic tree, or spelling variants (typos, hyphenation etc). To support exact matching of a scientific name against the core taxonomy, additional names at higher ranks help interpretation and error prevention. For datasets where the hierarchical representation in the published data is not important, higher level names can be supplied as part of the record itself by adding the relevant DarwinCore fields, similar to occurrence datasets.
 
@@ -154,141 +151,151 @@ With scientific names, there are numerous cases where the matching of a given na
 
 Names should be scientific (latin) names at major Linnean ranks, like “Animalia” (kingdom) or “Rosaceae” (family). Not: common names (“animals”), abbreviations (“Rosac.”), intermediate rank levels (“Tetrapoda” (superclass)), or polyphyletic or non-taxonomic groupings (“algae”, “herbivora”).
 
-學名必須是拉丁文，置於林奈系統的主要層級之下，像是「Animalia（界）」或「Rosaceae（科）」。不可以是：俗名（「animals」），縮寫（「Rosac.」），中間階層（「Tetrapoda」（超綱）），多系群或是非分類學的分群（「algae（藻類）」、「herbivora（草食性動物）」）。
+學名必須是拉丁文，置於林奈系統的主要層級之下，像是 Animalia（界）或 Rosaceae（科）。不可以是：俗名（animals），縮寫（Rosac.），中間階層（Tetrapoda，超綱），多系群或是非分類學的分群（algae，藻類、herbivora，草食性動物）。
 
 parentNameUsageID
 母學名用法編號（parentNameUsageID）
-
 Darwin Core dataset element, STRONGLY RECOMMENDED for checklist datasets
-達爾文資料集核心元素, 在名錄資料集為**強烈建議填寫**
+達爾文核心集資料元素，在名錄資料集為**強烈建議填寫**
 
-The taxonID of the next available higher-ranked (parent) entry within the checklist dataset, if higher taxon names are supplied as separate entries in the list. See http://rs.tdwg.org/dwc/terms/parentNameUsageID.
+The taxonID of the next available higher-ranked (parent) entry within the checklist dataset, if higher taxon names are supplied as separate entries in the list. See https://dwc.tdwg.org/list/#dwc_parentNameUsageID.
 This supports the representation of the dataset as a hierarchy, e.g. for the publication of a taxonomy.
-名錄資料集中較分類單元直接高一層級的名稱的物種編碼(taxonID)，前提為這個較分類單元高一層級的名稱在列表中為分開輸入。參閱http://rs.tdwg.org/dwc/terms/parentNameUsageID.
+在名錄資料集紀錄中，某分類群下一個高階學名紀錄（母紀錄）的物種識別碼（taxonID），前提為此高階分類群學名在列表中為單獨的紀錄。參閱 https://dwc.tdwg.org/list/#dwc_parentNameUsageID。這個編號可支援資料集內容以階層的樣式呈現，例如分類學成果的出版。
 
-    這個編碼可以成為資料集中的階層(hierarchy)代表，亦即用於分類學的出版品。
-說明:如果資料集中有輸入學名、屬名及科名等，則屬名的編碼為學名編碼的父名編碼，科名的編碼為屬名的父名編碼。依此類推，可以有效建立分類層級。
-[我覺得我的解釋比較好…]
+（譯注：例如，資料集中除了物種學名外，亦有屬、科、目…等高階分類群的學名紀錄，則學名紀錄的母學名用法編號為屬名的分類群識別碼，屬名紀錄的母學名用法編號為科名的分類群識別碼。高階分類群紀錄若有缺，例如沒有屬名及科名紀錄，但有綱級紀錄，則學名紀錄的母學名用法編號為綱名紀錄的分類群識別碼。）
 
 acceptedNameUsageID
-接受名稱編碼(acceptedNameUsageID)
+有效名用法編號（acceptedNameUsageID）
 Darwin Core dataset element, STRONGLY RECOMMENDED for checklist datasets
-達爾維核心資料集元素，名錄型資料強烈建議提供。
+達爾文核心集資料元素，在名錄資料集為**強烈建議填寫**
 
-Within the record of a synonym, the taxonID of the accepted taxon name entry within the checklist dataset, if both synonyms and accepted names are supplied. See http://rs.tdwg.org/dwc/terms/acceptedNameUsageID
+Within the record of a synonym, the taxonID of the accepted taxon name entry within the checklist dataset, if both synonyms and accepted names are supplied. See https://dwc.tdwg.org/list/#dwc_acceptedNameUsageID
 This supports the representation of synonymy for a taxonomic dataset.
+假使名錄資料集中提供有效名及異名，則異名（synonym）的有效名用法編號，應為名錄中有效名的分類群識別碼（taxonID）。見 https://dwc.tdwg.org/list/#dwc_acceptedNameUsageID。這個編號可支援呈現名錄資料集中的異名表。
 
-假使一名錄型資料集中有提供被接受名及異名，則該異名(synonym)的這個欄位編碼，應為名錄中被接受的分類單元名稱的編碼(taxonID)。見http://rs.tdwg.org/dwc/terms/acceptedNameUsageID 這可以支應一個分類資料集的異名錄的代表性。
-說明:因為異名為無效名，所以一定有一個相對應的有效名(被接受名)，故在這一個欄位中填入該有效名作為連結。A種的欄位若填入B的編碼，則表示A為B之次異名。
+（譯注：因為異名為無效名，所以它的有效名必定存在，在其有效名用法編號欄位中填入同資料集中有效名的分類群識別碼，可建立此連結。）
 
 vernacularName
-俗名(vernacularName)
+普通名（vernacularName）
 Darwin Core dataset element, SHARE IF AVAILABLE for checklist datasets
-達爾維核心資料集元素，名錄型資料盡可能提供。
+達爾文核心集資料元素，在名錄資料集為**有則分享**
 
 See http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml. When supplied, also add at least the language of the name, using ISO 639-1 language codes
 
-參照http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml.
-若有，也請至少提供名稱所使用哪個國家的語言，可參照ISO 639-1 language codes
+請參照 http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml。提供時，也請至少參照 ISO 639-1 提供普通名的語言編碼。
 
 title
-標題(title)
+標題（title）
 Dataset metadata EML, REQUIRED for checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
 The title under which the dataset will be published at gbif.org.
-每個資料集的標題都會發布在gbif.org網站。
+資料集的標題，亦是發布在 gbif.org 網站上的資料集名稱。
 
 Recommendation: a brief, but descriptive title that characterizes the dataset in an international context and distinguishes it from similar datasets in other institutions. E.g. “Four new generic and 14 new specific synonymies in Pholcidae, and transfer of Pholcoides Roewer to Filistatidae (Araneae)”. Not recommended: “Araneae (Part 1) part.”. The title will, i.a., be part of the dataset citation on use of the data.
-建議事項:一段簡短、可以指出資料集的國際背景以及與其他研究單位的資料及區分的描述性文字。例如“Four new generic and 14 new specific synonymies in Pholcidae, and transfer of Pholcoides Roewer to Filistatidae (Araneae)”。不建議使用“Araneae (Part 1) part”。 這表示標題最後會變成資料集引用文獻的標題。
-說明:標題盡量避免過於簡短或不容易判斷出處或造成重複。最好明確指出地點、分類群及簡短內容。
+建議：使用簡短、可以在國際間突顯資料集特色並且與其他研究機構相似資料集有所區別的描述性英語文字。例如「Four new generic and 14 new specific synonymies in Pholcidae, and transfer of Pholcoides Roewer to Filistatidae (Araneae)」。不建議：像是「Araneae (Part 1) part」的標題。此標題將會是使用資料時，資料集引用條目的一部分。
+（譯注：標題盡量避免過於簡短、不容易判斷出處或造成重複。最好明確指出地點、分類群及代表性。）
 
 description
-基本描述(description)
+描述（description）
 Dataset metadata EML, REQUIRED for checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
 An English language text, describing the dataset.
 一段用英文描述資料集內容的文字。
 This may include a longer version of title, a description of geographic, temporal and taxonomic scope of the checklist, methodology and purpose of the underlying data compilation (e.g. red list, invasive species, freshwater taxa, regional flora), relevant literature references, and any other information you consider relevant to characterize the dataset. A second version of the description in another language than English may be added underneath.
-可以是較長版本的標題，敘明名錄之地理區、溫度及分類範疇、研究方法及目的(例如紅皮書、外來種、淡水物種、地區性植物)、適當的參考文獻或者您認為符合資料集特性的其他資訊。另外一個以英語以外的語言的描述也可置於英語基本描述下方。
+可以是較長版本的標題，敘明名錄之地理區、時間及分類範疇、研究方法及編撰目的（例如紅皮書、入侵種、淡水物種、地區性植物相）、相關的參考文獻以及任何符合資料集特性的其他資訊。非英語以外的版本可置於英文描述的下方。
 
 publishing organization
-發布單位(publishing organization)
+發布組織（publishing organization）
 Dataset metadata EML, REQUIRED for checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
 The title of the institution or organization that will be listed as the data publisher at gbif.org. 
-研究所或組織的名稱在gbif.org中將被列為資料發布者。
+研究機構或組織的名稱，在 gbif.org 中將被列為資料發布者。
 The publishing organization is the institution which holds or owns the dataset and is in charge of its contents and maintenance. The title given should be the official title of the organization as registered with relevant authorities, listed on websites, and, if applicable, as stated in the project contract.
-發布資料的組織為持有或擁有資料集且負責資料內容及維護的研究所。名稱應為已在相關機構註冊、在網站上明列的組織正式名稱，抑或是計畫合約中所提及之名稱。
+發布組織為持有或擁有資料集且負責資料內容及維護的機構。名稱應為已在相關機構註冊、在網站上明列的組織正式名稱，亦或是計畫合約中使用之名稱。
 
 type
-資料集類別(type)
+資料集類別（type）
 Dataset metadata EML, REQUIRED for checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 The type of the dataset. Here: “checklist”.
-這邊應該要填入的類別為”名錄(Checklist)”。
-The record type describes the main focus of all records contained in the dataset (core records). For a checklist dataset, the record type will always be “checklist”. There may also be occurrences linked to checklist records (e.g. vouchers of a taxonomic treatment, herbarium records documenting a regional flora). The structure and requirements for this linked information follows the guidelines given for occurrence data publication [link].
-資料的類別表示資料集中所有紀錄的主要焦點(核心紀錄)。對於名錄型資料，紀錄的類別一定是”checklist”。也有可能是名錄紀錄所連結的出現資料(例如，分類研究的證物標本或紀錄一個地區植物相的博物館記錄)。這個連結的資訊應該依照出現資料發布的指引[link]。
+資料集的類別。此處應為 checklist（名錄）。
+
+The record type describes the main focus of all records contained in the dataset (core records). For a checklist dataset, the record type will always be “checklist”. There may also be occurrences linked to checklist records (e.g. vouchers of a taxonomic treatment, herbarium records documenting a regional flora). The structure and requirements for this linked information follows the guidelines given for [occurrence data publication](https://ipt.gbif.org/manual/en/ipt/2.5/occurrence-data).
+資料的類別表示資料集中所有紀錄所專注者（核心紀錄）。對於名錄資料集而言，此欄位一定是 checklist。它也有可能連結至物種出現紀錄（例如，分類修訂的證據標本，或紀錄一個地區植物相的標本館紀錄）。所連結的資訊應該依循[出現資料的發布導引](https://ipt.gbif.org/manual/en/ipt/2.5/occurrence-data)。
 
 license
-許可證照(license)
+授權（license）
 Dataset metadata EML, REQUIRED for checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 A machine-readable statement of the rights attached to the published dataset. Use either CC0 or CC BY.
-Note: All datasets funded under the BID and BIFA programmes must be published under either a Creative Commons CC0 rights waiver or a CC BY Attribution license.. Datasets without a valid license statement will not be accepted for publication. Machine-readable licenses allow automated data filters that give users clear guidance on the permitted use of records, thereby promoting data use and citation. 
-注意:所有由BID及BIFA程式所資助的資料集均需使用Creative Commons CC0 rights waiver或CC BY Attribution license發表。資料集若沒有有效許可證照聲明，將不會被接受作為發表。可被機器讀取的許可證照可以讓資料自動過濾，為用戶提供關於允許使用記錄的明確指南，從而促進數據使用和引用。
+發布的資料集所附上一機器可讀的權利聲明。使用 CC0 或 CC BY。
 
-contact(s)
-聯絡方式(contact(s))
+Note: All datasets funded under the BID and BIFA programmes must be published under either a Creative Commons CC0 rights waiver or a CC BY Attribution license.. Datasets without a valid license statement will not be accepted for publication. Machine-readable licenses allow automated data filters that give users clear guidance on the permitted use of records, thereby promoting data use and citation. 
+
+注意：所有由 [BID](https://www.gbif.org/zh-tw/programme/82243) 及 [BIFA](https://www.gbif.org/zh-tw/programme/82629/) 計畫資助的資料集均需使用創用授權（Creative Commons）CC0 公眾領域貢獻宣告或 CC BY 姓名標示授權發表。資料集若沒有有效的授權聲明，將不會被接受發表。機器可讀的授權讓資料可以自動過濾，為使用者提供資料記錄使用範圍的明確指引，從而促進資料的使用和引用。
+
+contact
+聯絡人（contact）
 Dataset metadata EML, REQUIRED for checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
 Contact data (minimum: name and email) for at least one administrative contact for the dataset.
-內容包含至少一位資料集元資料行政部門聯絡資料(至少有名字與電子郵件)。
+此資料集至少一位行政人員的聯絡資料（最少有名字與電子郵件）。
+
 Contact data will be publicly visible at gbif.org. This information is required to ensure the possibility of communication about the dataset. The administrative contact is the person/role to be consulted about content, quality, and rights questions concerning the dataset, both by users and by central services (GBIFS). If personal contact data cannot be supplied, it is possible to supply a functional contact through a role name (e.g. “curator”) and email (collections@myhouse.com). It is necessary, though, that responsibilities for handling incoming communication are clearly defined and followed internally.
-聯絡資料將可在gbif.org中公開審視。此訊息為必要以確與認資料集(提供者)溝通的可能性。行政部門的聯絡人為GBIFS的使用者及中央服務部門可以就資料集的內容、品質以及版權問題與之協調的人(角色)。如果無法提供個人的連略資訊，也可以提供一個具有功能性的聯絡人(例如:館長)及電子郵件(例如:collections@myhouse.com)。但是，必須要明確定義誰應該負責處理接收到的訊息，且內部應遵守。
 
-creator(s)
-建立者(creator(s))
-資料集元資料生態模式語言，名錄型資料為必填。
+聯絡資料將會在 gbif.org 上公開。此資訊為確保資料集相關的溝通聯繫所必須。當使用者及中央服務單位（GBIF 祕書處）需要就資料的內容、品質及權利問題進行瞭解，行政聯絡人為諮詢的對象。如果無法提供個人的連絡資訊，也可以提供一個功能性角色名稱（例如：典藏管理員）及電子郵件（例如：collections@myhouse.com）。必須要注意的事，組織內部需明確定義誰應該負責接收訊息並處理後續事宜。
+
+creator
+創建者（creator）
 Dataset metadata EML, REQUIRED for checklist datasets
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
-Contact data (minimum: name and email) for the creator of the dataset (see [link])
-內容包含資料集元資料創建者聯絡資料(至少有名字與電子郵件)(見[link])。
+Contact data (minimum: name and email) for the creator of the dataset (see [creator](http://web.archive.org/web/2013if_/http://knb.ecoinformatics.org/software/eml/eml-2.1.1/eml-resource.html#creator))
+此資料集創建者（們）的聯絡資料（至少有名字與電子郵件）。
 
-metadata provider(s)
-元資料提供者(metadata provider(s))
-資料集元資料生態模式語言，名錄型資料為必填。
+metadataProvider
+詮釋資料提供者 metadata （provider(s)）
 Dataset metadata EML, REQUIRED for checklist datasets
-Contact data (minimum: name and email) for the author of the dataset metadata (see [link])
-內容包含資料集元資料作者聯絡資料(至少有名字與電子郵件)(見[link])。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
+
+Contact data (minimum: name and email) for the author of the dataset metadata (see [metadataProvider](http://web.archive.org/web/2013if_/http://knb.ecoinformatics.org/software/eml/eml-2.1.1/eml-resource.html#metadataProvider))
+資料集[詮釋資料作者](http://web.archive.org/web/2013if_/http://knb.ecoinformatics.org/software/eml/eml-2.1.1/eml-resource.html#metadataProvider)（們）的聯絡資料（至少有名字與電子郵件）。
 
 citation
-引用方式(citation)
+引用條目 citation
 Dataset metadata EML, STRONGLY RECOMMENDED for checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
-a text specifying how your dataset should be cited in publications that make use of your data.
-為一段句子指出使用您資料集的人如何引用您的資料及在發表之中。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**強烈建議填寫**
+A text specifying how your dataset should be cited in publications that make use of your data.
+指出您資料集的使用者應如何在發表中引用您資料的一段文字。
+
 To ensure your dataset gets cited the way you want, you can explicitly specify the requested citation. This text will be displayed on the dataset page, and it will be supplied to data users together with downloads that contain any contribution from your dataset. If no text is specified, GBIF will automatically supply a standard format citation that includes the dataset name and the name of the publishing institution, together with the date of the download and a reference to gbif.org.
-為確定使用者會依您的意思引用您的資料集，您可以明確地指出引用的方式。這一段句子將會呈現在您的資料集頁面，同時也會提供給使用者所下載的任何含有您所貢獻的資料的其他資料集中。若缺少這一段文字，GBIF將會自動提供您的資料集一個標準的引用格式，包含資料集名稱、發表單位、下載日期及gbif.org的參照連結。
+為確保使用者依您的意向引用您的資料集，您可以明確地指出引用的方式。這一段文字將會呈現在（gbif.org）的資料集頁面，同時也會向資料使用者提供在任何包含您所貢獻資料的下載資料中。若不提供，則 GBIF 將會自動提供一個標準的引用條目，包含資料集名稱、發布機構、下載日期及 gbif.org 的參照連結。
 
 projectID
-計畫編碼(projectID)
+計畫編號（projectID）
 Dataset metadata EML, REQUIRED for some checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
+
 A unique identifier for the project from which a dataset is derived.
-一個計劃所衍生的資料集獨一無二的編碼。紀錄的形式則為一個GUID或者是全球獨一的識別碼。
+一個計畫衍生資料集獨一無二的識別碼。
+
 The record type is a GUID or other identifier that is near globally unique.
+紀錄形式為 GUID 或是幾乎全球唯一的識別碼。
+
 This field is REQUIRED for a dataset that is funded through programmes operated by GBIF. In this case, the projectID is the ID of the funded project as listed in the contract document, e.g. “BID-AF2016-0001-REG”.
-若資料集是由GBIF操作(管理?)的程式所資助，此欄位為必填。計畫編碼則為合約文件中所列由GBIF程式所資助的編號(編碼)，例如“BID-AF2016-0001-REG”。
+若資料集是由 GBIF 管理的計畫所資助，此欄位為必填。計畫編碼列在受資助的合約文件，例如「BID-AF2016-0001-REG」。
 
 projectTitle
-計畫名稱(title)
+計畫名稱（projectTitle）
 Dataset metadata EML, REQUIRED for some checklist datasets
-資料集元資料生態模式語言，名錄型資料為必填。
+生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
-for some checklist datasets The title of the funded project as listed in the contract document, but not containing the projectID and other administrative information, such as the project titles listed here.
-This field is REQUIRED for a dataset that is funded through programmes operated by GBIF. 
-有些名錄性質的資料集的名稱即為合約文件中所列之資助項目名稱，但不包含計畫編碼(projectID)及其他管理資訊。相關範例可以參照計畫項目列表。若資料集是由GBIF操作(管理?)的程式所資助，此欄位為必填。
+The title of the funded project as listed in the contract document, but not containing the projectID and other administrative information, such as the [project titles listed here](/programme/82243/#projects).
+得到經費資助的計畫名稱，但不包含計畫編號（projectID）及其他管理資訊。範例可參閱[計畫列表](/programme/82243/#projects)。
+
+This field is REQUIRED for a dataset that is funded through programmes operated by GBIF
+若資料集是由 GBIF 管理的計畫所資助，此欄位為必填。
