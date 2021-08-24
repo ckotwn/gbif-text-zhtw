@@ -4,11 +4,12 @@ https://www.gbif.org/zh-tw/data-quality-requirements-checklists
 | Date | Description | Author(s) |
 | ---- | ----------- | --------- |
 |      | 初譯        | 何宣慶    |
-|      | 覆譯及審閱  | 柯智仁    |
-|      | 發布  | 柯智仁   |
+| 2021-08-24 | 覆譯及審閱  | 柯智仁    |
+| 2021-08-24 | 發布  | 柯智仁   |
 
 #### Found issues
-
+https://github.com/gbif/portal-feedback/issues/3545
+https://github.com/gbif/portal-feedback/issues/3546
 
 # Data quality requirements: Checklist datasets
 # 資料品質需求：名錄資料集
@@ -16,44 +17,50 @@ https://www.gbif.org/zh-tw/data-quality-requirements-checklists
 By following these data quality requirements and recommendations, data publishers can improve the quality, completeness and value of their checklist datasets.
 依循這些資料品質的需求及建議，資料發布者可以改善其名錄資料集的品質、完整性及價值。
 
-Checklist datasets provide a catalogue, rapid summary or baseline inventory a set of named organisms, or taxa. While they may include additional details like local species names or specimen citations, checklists typically categorize information along taxonomic, geographic, and thematic lines, or some combination of the three.
-By following these data quality requirements and recommendations, data publishers can improve the quality, completeness and value of their checklist datasets.
+[Checklist datasets](/dataset-classes#checklists) provide a catalogue, rapid summary or baseline inventory a set of named organisms, or taxa. While they may include additional details like local species names or specimen citations, checklists typically categorize information along taxonomic, geographic, and thematic lines, or some combination of the three.
+[名錄資料集](/dataset-classes#checklists)提供一組已鑑定生物或分類群（註）的目錄、摘要或基線清單。名錄通常依照分類學、地理、主題（如瀕危等級）或此三者中的組合來進行資訊的分類，同時可能包含其他細節如當地物種普通名或標本佐證。
 
-名錄資料集提供一組已鑑定生物或分類群（註）的目錄、摘要或基線清單。名錄通常依照分類學、地理、主題（如瀕危等級）或此三者中的組合來進行資訊的分類，同時可能包含其他細節如當地物種普通名或標本佐證。依循這些資料品質的需求及建議，資料發布者可以改善他們名錄資料集的品質、完整性及價值。
+By following these data quality requirements and recommendations, data publishers can improve the quality, completeness and value of their checklist datasets.
+依循這些資料品質的需求及建議，資料發布者可以改善他們名錄資料集的品質、完整性及價值。
 
 註：分類群（taxon，複數 taxa）為演化上親緣關係接近的同系群體，可以指涉種、亞種或者種以上位階。
 
 ## Darwin Core records 
 ## 達爾文核心集紀錄
 
-欄位名稱	填寫指示
-taxonID（分類群識別碼） 必填
-scientificName（學名） 必填
-taxonRank（分類群位階） 必填
-kingdom（界）強烈建議填寫
-parentNameUsageID（母學名用法編號） 強烈建議填寫
-acceptedNameUsageID（接受學名用法編號） 強烈建議填寫
-vernacularName（普通名） 有則分享
+|欄位名稱 | [填寫指示](#status) |
+|--|--|
+|[taxonID](#dcTaxon)（分類群識別碼） | 必填 |
+|[scientificName](#dcSciName)（學名） | 必填 |
+|[taxonRank](#dcTaxonRank)（分類階層） | 必填 |
+|[kingdom](#dcKingdom)（界） | 強烈建議填寫 | 
+|[parentNameUsageID](#dcParentName)（母學名用法編號） | 強烈建議填寫 | 
+|[acceptedNameUsageID](#dcAcceptedName)（有效名用法編號） | 強烈建議填寫 | 
+|[vernacularName](#dcVernacularName)（普通名） | 有則分享 | 
+
 
 ## Dataset metadata (EML)
 ## 資料集詮釋資料（EML）
 
-欄位名稱	填寫指示
-title（資料集名稱）必填
-description（基本描述）必填
-publishing organization（發布組織） 必填
-type（資料類型） 必填
-license（資料使用授權） 必填
-contact(s)（聯絡資訊） 必填
-creator(s)（創建者） 必填
-metadata provider(s)（詮釋資料提供者） 必填
-citation（引用條目） 強烈建議填寫
+|欄位名稱 | [填寫指示](#status) |
+|--|--|
+|[title](#emlTitle)（資料集名稱） | 必填 |
+|[description](#emlDescription)（描述） | 必填 |
+|[publisher](#emlPublisher)（發布組織） | 必填 |
+|[type](#emlType)（資料類型） | 必填 | 
+|[license](#emlLicense)（資料使用授權） | 必填 |
+|[contact](#emlContact)（聯絡資訊） | 必填 |
+|[creator](#emlCreator)（創建者） | 必填 |
+|[metadataProvider](#emlMetadataProvider)（詮釋資料提供者） | 必填 |
+|[citation](#emlCitation)（引用條目） | 強烈建議填寫 |
 
-Note: If the dataset is funded through a programme operated by GBIF (e.g. BID, BIFA, CESP), two additional fields are required:
-注意：若一資料集為 GBIF 下的計畫所資助（例如：BID, BIFA, CESP），則必須額外填寫以下兩個欄位：
+Note: If the dataset is funded through a programme operated by GBIF (e.g. [BID](/programme/82243), [BIFA](/programme/82629), [CESP](/programme/82219)), __two additional fields are required__:
+注意：若一資料集為 GBIF 下的計畫所資助（例如：[BID](/programme/82243), [BIFA](/programme/82629), [CESP](/programme/82219)），則**必須額外填寫以下兩個欄位**：
 	
-projectID (計畫編號) 必填
-projectTitle (計畫名稱) 必填
+|欄位名稱|[填寫指示](#status)|
+|--|--|
+|[projectID](#emlProjectID)（計畫編號） | Required |
+|[projectTitle](#emlProjectTitle)（計畫名稱） | Required |
 
 ## Status
 ## 填寫指示說明
@@ -62,7 +69,7 @@ projectTitle (計畫名稱) 必填
 ### 必填
 The items listed below constitute the minimum formal requirements for publishing [an occurrence dataset](https://github.com/gbif/portal-feedback/issues/3545). GBIF.org will not accept a dataset without these terms and will not index the records. While these items are mandatory for publishing the dataset at all, they are only the starting point. The usefulness of the published data will still be severely limited unless additional information is supplied.
 
-下方所列為正式發表名錄資料集必須之最少欄位項目。GBIF.org 不會接受缺少這些欄位元素的資料集，也不會索引其中的紀錄。雖然這些欄位是發布資料必備，但這僅只是開始而已。除非再提供更多額外欄位資料，僅滿足必填欄位的發布資料仍會有很多使用上的限制。
+下方所列為正式發表名錄資料集必須之最少欄位項目。GBIF.org 不會接受缺少這些欄位元素的資料集，也不會為其中的紀錄製作索引。雖然這些欄位是發布資料必備，但這僅只是開始而已。除非再提供更多額外欄位資料，僅滿足必填欄位的發布資料仍會有很多使用上的限制。
 
 ### Strongly recommended
 ### 強烈建議填寫
@@ -159,8 +166,9 @@ Darwin Core dataset element, STRONGLY RECOMMENDED for checklist datasets
 達爾文核心集資料元素，在名錄資料集為**強烈建議填寫**
 
 The taxonID of the next available higher-ranked (parent) entry within the checklist dataset, if higher taxon names are supplied as separate entries in the list. See https://dwc.tdwg.org/list/#dwc_parentNameUsageID.
+在名錄資料集紀錄中，某分類群下一個高階學名紀錄（母紀錄）的物種識別碼（taxonID），前提為此高階分類群學名在列表中為單獨的紀錄。參閱 https://dwc.tdwg.org/list/#dwc_parentNameUsageID。
 This supports the representation of the dataset as a hierarchy, e.g. for the publication of a taxonomy.
-在名錄資料集紀錄中，某分類群下一個高階學名紀錄（母紀錄）的物種識別碼（taxonID），前提為此高階分類群學名在列表中為單獨的紀錄。參閱 https://dwc.tdwg.org/list/#dwc_parentNameUsageID。這個編號可支援資料集內容以階層的樣式呈現，例如分類學成果的出版。
+這個編號可支援資料集內容以階層的樣式呈現，例如分類學成果的出版。
 
 （譯注：例如，資料集中除了物種學名外，亦有屬、科、目…等高階分類群的學名紀錄，則學名紀錄的母學名用法編號為屬名的分類群識別碼，屬名紀錄的母學名用法編號為科名的分類群識別碼。高階分類群紀錄若有缺，例如沒有屬名及科名紀錄，但有綱級紀錄，則學名紀錄的母學名用法編號為綱名紀錄的分類群識別碼。）
 
@@ -170,8 +178,9 @@ Darwin Core dataset element, STRONGLY RECOMMENDED for checklist datasets
 達爾文核心集資料元素，在名錄資料集為**強烈建議填寫**
 
 Within the record of a synonym, the taxonID of the accepted taxon name entry within the checklist dataset, if both synonyms and accepted names are supplied. See https://dwc.tdwg.org/list/#dwc_acceptedNameUsageID
+假使名錄資料集中提供有效名及異名，則異名（synonym）的有效名用法編號，應為名錄中有效名的分類群識別碼（taxonID）。見 https://dwc.tdwg.org/list/#dwc_acceptedNameUsageID。
 This supports the representation of synonymy for a taxonomic dataset.
-假使名錄資料集中提供有效名及異名，則異名（synonym）的有效名用法編號，應為名錄中有效名的分類群識別碼（taxonID）。見 https://dwc.tdwg.org/list/#dwc_acceptedNameUsageID。這個編號可支援呈現名錄資料集中的異名表。
+這個編號可支援呈現名錄資料集中的異名表。
 
 （譯注：因為異名為無效名，所以它的有效名必定存在，在其有效名用法編號欄位中填入同資料集中有效名的分類群識別碼，可建立此連結。）
 
@@ -180,12 +189,12 @@ vernacularName
 Darwin Core dataset element, SHARE IF AVAILABLE for checklist datasets
 達爾文核心集資料元素，在名錄資料集為**有則分享**
 
-See http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml. When supplied, also add at least the language of the name, using ISO 639-1 language codes
+See http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml. When supplied, also add at least the language of the name, using [ISO 639-1 language codes](http://rs.gbif.org/vocabulary/iso/639-1.xml)
 
-請參照 http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml。提供時，也請至少參照 ISO 639-1 提供普通名的語言編碼。
+請參照 http://rs.gbif.org/extension/gbif/1.0/vernacularname.xml。提供時，也請至少參照 [ISO 639-1 語言編碼](http://rs.gbif.org/vocabulary/iso/639-1.xml)提供普通名的語言編碼。 
 
 title
-標題（title）
+資料集名稱（title）
 Dataset metadata EML, REQUIRED for checklist datasets
 生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
@@ -202,12 +211,12 @@ Dataset metadata EML, REQUIRED for checklist datasets
 生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
 An English language text, describing the dataset.
-一段用英文描述資料集內容的文字。
+一段以英文描述資料集內容的文字。
 This may include a longer version of title, a description of geographic, temporal and taxonomic scope of the checklist, methodology and purpose of the underlying data compilation (e.g. red list, invasive species, freshwater taxa, regional flora), relevant literature references, and any other information you consider relevant to characterize the dataset. A second version of the description in another language than English may be added underneath.
 可以是較長版本的標題，敘明名錄之地理區、時間及分類範疇、研究方法及編撰目的（例如紅皮書、入侵種、淡水物種、地區性植物相）、相關的參考文獻以及任何符合資料集特性的其他資訊。非英語以外的版本可置於英文描述的下方。
 
-publishing organization
-發布組織（publishing organization）
+publisher
+發布組織（publiser）
 Dataset metadata EML, REQUIRED for checklist datasets
 生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
@@ -227,7 +236,7 @@ The record type describes the main focus of all records contained in the dataset
 資料的類別表示資料集中所有紀錄所專注者（核心紀錄）。對於名錄資料集而言，此欄位一定是 checklist。它也有可能連結至物種出現紀錄（例如，分類修訂的證據標本，或紀錄一個地區植物相的標本館紀錄）。所連結的資訊應該依循[出現資料的發布導引](https://ipt.gbif.org/manual/en/ipt/2.5/occurrence-data)。
 
 license
-授權（license）
+資料使用授權（license）
 Dataset metadata EML, REQUIRED for checklist datasets
 生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 A machine-readable statement of the rights attached to the published dataset. Use either CC0 or CC BY.
@@ -235,10 +244,10 @@ A machine-readable statement of the rights attached to the published dataset. Us
 
 Note: All datasets funded under the BID and BIFA programmes must be published under either a Creative Commons CC0 rights waiver or a CC BY Attribution license.. Datasets without a valid license statement will not be accepted for publication. Machine-readable licenses allow automated data filters that give users clear guidance on the permitted use of records, thereby promoting data use and citation. 
 
-注意：所有由 [BID](https://www.gbif.org/zh-tw/programme/82243) 及 [BIFA](https://www.gbif.org/zh-tw/programme/82629/) 計畫資助的資料集均需使用創用授權（Creative Commons）CC0 公眾領域貢獻宣告或 CC BY 姓名標示授權發表。資料集若沒有有效的授權聲明，將不會被接受發表。機器可讀的授權讓資料可以自動過濾，為使用者提供資料記錄使用範圍的明確指引，從而促進資料的使用和引用。
+注意：所有由 [BID](https://www.gbif.org/zh-tw/programme/82243) 及 [BIFA](https://www.gbif.org/zh-tw/programme/82629/) 計畫資助的資料集均需使用創用授權（Creative Commons）CC0 公眾領域貢獻宣告或 CC BY 姓名標示授權發表。資料集若沒有有效的授權聲明，將不會被接受發布。機器可讀的授權讓資料可以自動過濾，為使用者提供資料記錄使用範圍的明確指引，從而促進資料的使用和引用。
 
 contact
-聯絡人（contact）
+聯絡資訊（contact）
 Dataset metadata EML, REQUIRED for checklist datasets
 生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
@@ -255,7 +264,7 @@ Dataset metadata EML, REQUIRED for checklist datasets
 生態詮釋資料語言（EML）資料元素，在名錄資料集為**必填**
 
 Contact data (minimum: name and email) for the creator of the dataset (see [creator](http://web.archive.org/web/2013if_/http://knb.ecoinformatics.org/software/eml/eml-2.1.1/eml-resource.html#creator))
-此資料集創建者（們）的聯絡資料（至少有名字與電子郵件）。
+此資料集[創建者](http://web.archive.org/web/2013if_/http://knb.ecoinformatics.org/software/eml/eml-2.1.1/eml-resource.html#creator)（們）的聯絡資料（至少有名字與電子郵件）。
 
 metadataProvider
 詮釋資料提供者 metadata （provider(s)）
